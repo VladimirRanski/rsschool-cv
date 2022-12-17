@@ -1,13 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>style.css</style>
+    <link href="./style.css" rel="stylesheet">
     <title>My CV</title>
 </head>
-<body>
-    <img src="/my_photo.jpg" alt="photo">
+
+<body class="body">
+
+    <header class="header">
+        <nav class="menu">
+            <ul class="menu-list">
+                <li class="menu__item"><a class="menu__link" href="#about-me">Name</a></li>
+                <li class="menu__item"><a class="menu__link" href="#contact">Contacts</a></li>
+                <li class="menu__item"><a class="menu__link" href="#skils">Skils</a></li>
+                <li class="menu__item"><a class="menu__link" href="#code">Code</a></li>
+                <li class="menu__item"><a class="menu__link" href="#courses">Courses</a></li>
+                <li class="menu__item"><a class="menu__link" href="#languages">Languages</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="section section__about-me" id="about-me">
+        <img class="about-me__photo" src="./my_photo.jpg" alt="photo">
+        <div class="section__text">
+            <h1 class="about-me__title">Vladimir Ranski</h1>
+            <h2 class="section__title">About me:</h2>
+            <p class="about-me__text">I work as a CNC operator.</p>
+            <p class="about-me__text">I decided to change my life and work as a Frontend developer.</p>
+            <p class="about-me__text">I am constantly learning and discovering new things.</p>
+            <p class="about-me__text">Very lazy - I do it so as not to redo it.</p>
+        </div>
+    </section>
+
+    <section class="section section__contact" id="contact">
+        <h2 class="section__title">Contact info:</h2>
+        <div class="section__text">
+            <ul class="contact-list">
+                <li class="contact__item"><a class="contact__link" href="tel:+375292251923">Phone</a></li>
+                <li class="contact__item"><a class="contact__link" href="mailto:ranski.vladimir@gamil.com">E-mail</a>
+                </li>
+                <li class="contact__item"><a class="contact__link" href="https://github.com/VladimirRanski">GitHub</a>
+                </li>
+                <li class="contact__item"><a class="contact__link" href="https://t.me/Vovchara_777">Telegram</a></li>
+                <li class="contact__item"><a class="contact__link"
+                        href="https://www.linkedin.com/in/%D0%B2%D0%BB%D0%B0%D0%B4%D0%B8%D0%BC%D0%B8%D1%80-%D1%80%D0%B0%D0%BD%D1%81%D0%BA%D0%B8%D0%B9-b516a8234/">LinkedIn</a>
+                </li>
+            </ul>
+        </div>
+
+    </section>
+
+    <section class="section section__skils" id="skils">
+        <h2 class="section__title">My skils:</h2>
+        <div class="section__text">
+            <ul class="skils__list">
+                <li class="skils__item">HTML</li>
+                <li class="skils__item">CSS</li>
+                <li class="skils__item">Java Script</li>
+                <li class="skils__item">Type Script</li>
+                <li class="skils__item">GIT</li>
+                <li class="skils__item">React</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="section section__code" id="code">
+        <h2 class="section__title">Code example:</h2>
+        <div class="section__text">
+            <code class="code__item">
+                const countBits = function(n) { <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;let result = 0;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;while (n > 0) {<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if (n % 2 == 1) {<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;result = result + 1;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;n = parseInt(n / 2);<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;}<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;return result;<br>
+                };
+            </code>
+        </div>
+    </section>
+
+    <section class="section section__courses" id="courses">
+        <h2 class="section__title">Education and courses:</h2>
+        <div class="section__text">
+            <ul class="courses__list">
+                <li class="courses__items"><b>WayUp</b>
+                    <ul class="couses__items-list">
+                        <li class="courses__item"><a
+                                href="https://drive.google.com/file/d/1Ag_zbbWR11ooUy27WvVryudeADfkDULg/view?usp=sharing">Веб-верстальщик:
+                                начало</a></li>
+                        <li class="courses__item"><a
+                                href="https://drive.google.com/file/d/1BWfMkli3w4hZXIp_OtN_OaQDSP9kiF32/view?usp=sharing">Javascript:
+                                погружение</a></li>
+                    </ul>
+                </li>
+                <li class="courses__items"><b>Stepik</b>
+                    <ul class="couses__items-list">
+                        <li class="courses__item"><a href="https://stepik.org/cert/1516167">курс JavaScript для
+                                начинающих</a></li>
+                    </ul>
+                </li>
+                <li class="courses__items"><b>RS School</b>
+                    <ul class="couses__items-list">
+                        <li class="courses__item"><a href="https://rs.school/js/">курс «JavaScript/Front-end»</a> - in
+                            the
+                            learning process...</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="section section__languages" id="languages">
+        <h2 class="section__title">Languages:</h2>
+        <div class="section__text">
+            <ul class="languages__list">
+                <li class="languages__item"><b>Russian</b> - native speaker</li>
+                <li class="languages__item"><b>English</b> - A1 (A2 in the learning process...)</li>
+            </ul>
+        </div>
+    </section>
+    <footer class="footer">
+        <ul class="footer__list">
+            <li class="footer__item">
+                <a href="https://github.com/VladimirRanski">
+                    <svg height="32" aria-hidden="true" viewBox="0 0 16 16" version="1.1" width="32" data-view-component="true"
+                    class="octicon octicon-mark-github v-align-middle">
+                    <path fill-rule="evenodd"
+                        d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z">
+                    </path>
+                    </svg>    
+                </a>
+            </li>
+            <li class="footer__item">2022</li>
+            <li class="footer__item"><a class="footer__link" href="https://rs.school/js/"><img class="logo-course" src="./rs_school_js.svg" alt="logo-course"></a></li>
+        </ul>
+    </footer>
+
 </body>
+
 </html>
