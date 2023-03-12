@@ -147,3 +147,7 @@ h6 {
 .logo-course {
   height: 20px;
 }
+
+.link__text--0 {
+  font-size: 0;
+}
