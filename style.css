@@ -116,7 +116,7 @@ h6 {
 
 .section__title {
   font-size: 25px;
-  color: #ccc;
+  color: #8b8b8b;
   margin: 0 auto;
 }
 
@@ -138,6 +138,23 @@ h6 {
 
 .about-me__text {
   margin-top: 10px;
+}
+
+.contact__item,
+.skils__item,
+.languages__item {
+  margin-bottom: 10px;
+}
+
+.contact__link,
+.skils__item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.project-img {
+  max-width: 500px;
 }
 
 .couses__items-list {
