@@ -80,9 +80,6 @@ h6 {
 }
 /*--------------------*/
 
-.body {
-}
-
 .header,
 .footer {
   background: #ccc;
@@ -120,11 +117,6 @@ h6 {
   margin: 0 auto;
 }
 
-.section__about-me {
-  /* align-items: center; */
-  /* gap: 50px; */
-}
-
 .about-me__photo {
   width: 200px;
   border-radius: 20px;
@@ -141,13 +133,13 @@ h6 {
 }
 
 .contact__item,
-.skils__item,
+.skills__item,
 .languages__item {
   margin-bottom: 10px;
 }
 
 .contact__link,
-.skils__item {
+.skills__item {
   display: flex;
   align-items: center;
   gap: 10px;
@@ -157,7 +149,7 @@ h6 {
   max-width: 500px;
 }
 
-.couses__items-list {
+.courses__items-list {
   padding: 10px;
 }
 
